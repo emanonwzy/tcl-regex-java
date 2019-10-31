@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-  ~ Copyright 2014 Basis Technology Corp.
+  ~ Copyright 2014-2019 Basis Technology Corp.
   ~
   ~    Licensed under the Apache License, Version 2.0 (the "License");
   ~    you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@
     <parent>
         <groupId>com.basistech</groupId>
         <artifactId>open-source-parent</artifactId>
-        <version>2.0.0</version>
+        <version>4.0.0</version>
     </parent>
     <prerequisites>
         <maven>3.0.4</maven>
@@ -42,6 +42,9 @@
             <url>scm:git:git@github.com:basis-technology-corp/tcl-regex-java.git</url>
         </site>
     </distributionManagement>
+    <properties>
+        <skip-dependency-convergence>true</skip-dependency-convergence>
+    </properties>
     <dependencies>
         <!-- the order here (hamcrest, hamcrest, mockito) is important. -->
         <dependency>

@@ -1,5 +1,5 @@
 /*
-* Copyright 2014 Basis Technology Corp.
+* Copyright 2015 Basis Technology Corp.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -86,7 +86,7 @@ public class OsgiBundleIT extends Utils {
 
         bundleUrls.add(String.format("file:%s/tcl-regex-%s.jar", projectBuildDirectory, projectVersion));
 
-        String[] bundles = bundleUrls.toArray(new String[bundleUrls.size()]);
+        String[] bundles = bundleUrls.toArray(new String[0]);
         return options(
                 provision(bundles),
                 systemPackages(
